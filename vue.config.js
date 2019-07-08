@@ -1,0 +1,11 @@
+module.exports={
+    devServer:{
+        before(app){
+            app.get('/api/list',(req,res)=>{
+                res.json({
+                    code:1
+                })
+            })
+        }
+    }
+}
